@@ -1,0 +1,16 @@
+<h2>Uploads</h2>
+
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% files.forEach(file => { %>
+        <tr>
+          <td><a href="/file/<%= file %>"><%= file %></a></td>
+        </tr>
+      <% }) %>
+    </tbody>
+  </table>
